@@ -1,15 +1,15 @@
-# a = [3,4,5,6,7]
-# prod = 1
-# for i in a:
-#     prod = prod * i
-# print(prod)
+a = [3,4,5,6,7]
+prod = 1
+for i in a:
+    prod = prod * i
+print(prod)
 
 
-# c = [10,20,30,40,50,60,70,80,90,100]
-# prod = 1
-# for i in c:
-#     prod =prod*i
-# print(prod)
+c = [10,20,30,40,50,60,70,80,90,100]
+prod = 1
+for i in c:
+    prod =prod*i
+print(prod)
 
 
 # z = [12,13,14,15,16,17,18]
@@ -56,8 +56,8 @@
 # print(prod)
 
 
-x = [3,4,7]
-prod = 1
-for i in x:
-    prod = prod*i
-print(prod)
+# x = [3,4,7]
+# prod = 1
+# for i in x:
+#     prod = prod*i
+# print(prod)

@@ -55,7 +55,7 @@
 # for key,value in my_dict.items():
 #     print(key,value)
 
-# my_dict ={"sushil":11,"abhishek":12,"deepika":13,"suita":14}
+# my_dict ={"sushil":11,"abhishek":12,"deepika":13,"sunita":14}
 # for key,value in my_dict.items():
 #     print(key,value)
 
@@ -127,13 +127,24 @@
 # my_dict = {"apple": 1, "banana": 2, "cherry": 3}
 # value = my_dict.update(d)
 # print(my_dict)
-result = {1:["neeraj",33,5,66],2:["saurabh",55,66,67],3:["sunil",44,55,66]}
+
+
+result = {1: ["neeraj", 33, 5, 66], 2: ["saurabh", 55, 66, 67], 3: ["sunil", 44, 55, 66]}
+print(result)
 
 i = 1
-n = 11
-while i<n:
-    roll = int(input("enter roll"))
-    print("roll")
-    i+=1
+n = 5
+while i < n:
+    rolln = int(input("enter the roll"))
+    search = result.get(rolln)
+    print(i)
+    i += 1
+    print("i=",i)
 
-
+    if search is None:
+        print("not found")
+    else:
+        total = search[1] + search[2] + search[3]
+        print("total", total)
+        per = total / 3
+        print("per", per)

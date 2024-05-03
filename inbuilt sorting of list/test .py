@@ -19,14 +19,14 @@
 # reversesortedarray = sorted(a,reverse=True)
 # print("reverse sorted array",reversesortedarray)
 
-# a = ["cat","dog","ball","apple"]
+a = ["cat","dog","ball","apple"]
 # a.sort(key=len)
 # print(a)
 # a.sort(key=len,reverse=True)
 # print(a)
 
 
-# making oue own function
+# making oue own function                ???????
 
 # def lastChar(s):
 # return s[0]                     #first sort
@@ -45,12 +45,12 @@
 # import functools as ft
 
 # a< b -ve,  a=b 0, a>b +ve
-# def mycompare(a, b):
-#     if a%2!=0:
-#         return -1
-#     if a%2==0:
-#         return 1
-#     return 0
+def mycompare(a, b):
+    if a%2!=0:
+        return -1
+    if a%2==0:
+        return 1
+    return 0
 
 # return 0
 # return b - a
@@ -79,29 +79,27 @@
 
 #  the same thing using lembda
 
-import functools as ft
-
-
-def mycompare(a, b):
-    return b - a
-
-
-a = [1, 2, 3, 4, 5,6]
-a.sort(key=ft.cmp_to_key(lambda a, b: a - b))
-print(a)
-
-
+# import functools as ft
+#
+#
+# def mycompare(a, b):
+#     return b - a
+#
+#
+# a = [1, 2, 3, 4, 5, 6]
+# a.sort(key=ft.cmp_to_key(lambda a, b: a - b))
+# print(a)
+#
 # generate a random array and sort it.
-
-from numpy import random
-
-a = list(random.randint(100,size=10))
-a.sort(key=ft.cmp_to_key(lambda a,b:a-b))
-print(a)
-
+#
+# from numpy import random
+#
+# a = list(random.randint(100, size=10))
+# a.sort(key=ft.cmp_to_key(lambda a, b: a - b))
+# print(a)
+#
 # another way of doing the same thing
 
-a = [random.randint(100) for x in range(10)]
-a.sort(key=ft.cmp_to_key(lambda a,b:a-b))
-print(a)
-
+# a = [random.randint(100) for x in range(10)]
+# a.sort(key=ft.cmp_to_key(lambda a, b: a - b))
+# print(a)
