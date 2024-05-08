@@ -9,9 +9,9 @@ while True:
     elif value == 2:
         print("cancel")
         texinum = input("enter texi num\n")
-        taxi = texi.get(texinum)
-        if taxi is not None:
-            print(taxi)
+        cancel = texi.get(texinum)
+        if cancel is not None:
+            print(cancel)
             texi.pop(texinum)
         else:
             print("not found")

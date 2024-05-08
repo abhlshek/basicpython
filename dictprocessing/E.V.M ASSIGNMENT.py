@@ -1,7 +1,7 @@
 votes = {"bjp": 0, "sp": 0, "bp": 0}
 print(votes)
 while True:
-    print("0,exit", "1,bjp", "2,sp", "3,bp", "4,total", "5 greater vote")
+    print("0,exit", "1,bjp", "2,sp", "3,bp", "4,total", "5, greater vote")
     num = int(input("enter num\n"))
     if num == 0:
         print("bye")
@@ -37,9 +37,7 @@ while True:
         print("greater")
         bjp = votes.get("bjp")
 
-
         sp = votes.get("sp")
-
 
         bp = votes.get("bp")
 
@@ -54,4 +52,4 @@ while True:
             votes = bp
 
         print("winner", winner)
-        print("votes",votes)
+        print("votes", votes)

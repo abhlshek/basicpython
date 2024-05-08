@@ -175,7 +175,5 @@
 # largest number
 
 
-
-
-
-
+word = "best"
+print(word[-3:])

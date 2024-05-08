@@ -21,6 +21,8 @@ while True:
         key = input("enter key\n")
         search = d.get(key)
         print(search)
+    elif option == 4:
+        print(d)
 
 
     elif option == 4:
