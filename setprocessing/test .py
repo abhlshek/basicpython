@@ -62,7 +62,7 @@
 
 # set1 = {1,2,3,4,5,6,7}
 # set2 = {7,8,9,2,3,4,5,6}
-# difference_set = set1 - set
+# difference_set = set1 - set2
 # print(difference_set)
 # difference_set = set2-set1
 # print(difference_set)
@@ -95,7 +95,7 @@
 # print(is_subset)
 
 # set1 = {1,2,3,4,5}
-# set2 ={2,3,4}
+# set2 ={3,4,5}
 # is_superset = set1.issuperset(set2)
 # print(is_superset)
 
