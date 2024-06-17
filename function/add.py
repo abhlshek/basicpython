@@ -45,7 +45,7 @@ mul(10, 5)
 # multiple return............
 
 
-def mul(a, b):
+def returnmul(a, b):
     mul = a * b
     return mul
 
@@ -59,20 +59,20 @@ print(x)
 # div............
 
 
-def div(a, b):
-    div = a / b
-    print(div)
+# def div(a, b):
+#     div = a / b
+#     print(div)
 
 
-div(20, 5)
+# div(20, 5)
 
 
 # return .............
-def div(a, b):
-    div = a / b
-    return div
+# def div(a, b):
+#     div = a / b
+#     return div
 
 
-x = div(20, 5)
-x = div(10, 5)
-print(x)
+# x = div(20, 5)
+# x = div(10, 5)
+# print(x)
