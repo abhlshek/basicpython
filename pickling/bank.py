@@ -30,7 +30,7 @@ while True:
         if balance <= 0:
             print("no bal")
         else:
-            accounts[account] = {"name": name,"balance": balance}
+            accounts[account] = {"name": name, "balance": balance}
             print(accounts)
 
 
