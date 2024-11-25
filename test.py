@@ -1,6 +1,12 @@
-num = 123321
-reverse = int(str(num)[:-1])
-if num == reverse:
-    print('p')
+totalpaisa=105
+if totalpaisa>=0:
+    sign=""
+    print("POSITIVE")
 else:
-    print('n')
+    sign="-"
+    print("NEGATIVE")
+    totalpaisa=-totalpaisa
+
+r=totalpaisa//100
+p=totalpaisa%100
+print("{2}Rs {0}.{1}".format(r,p,sign))
