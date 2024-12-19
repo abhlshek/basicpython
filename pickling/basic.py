@@ -9,3 +9,4 @@ datafile.close()
 datafile = open('datastore.txt', 'rb')  # rb = read
 data = pickle.load(datafile)  # read
 print(data)
+

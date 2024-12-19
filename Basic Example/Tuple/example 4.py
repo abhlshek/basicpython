@@ -1,0 +1,10 @@
+thistuple=(1,2,3,4,5,6,7)
+x=thistuple
+print(x)
+print(x[0])
+print(x[1])
+print(x[1:])
+print(x[:])
+print(x[-1])
+print(x[:-7])
+print(x[:7])

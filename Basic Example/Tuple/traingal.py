@@ -1,0 +1,9 @@
+side=4,7,1
+print(len(side))
+a=side[0]
+b=side[1]
+c=side[2]
+s=(a+b+c)/2
+print(s)
+area=(s*(s-a)*(s-b)*(s-c)**.5)
+print(area)

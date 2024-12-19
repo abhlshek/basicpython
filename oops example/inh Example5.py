@@ -1,5 +1,3 @@
-# inheritance................................
-
 class Person:
     def __init__(self, name, age, address):
         self.name = name
@@ -7,7 +5,7 @@ class Person:
         self.address = address
 
     def __str__(self):
-        return "name {0},age {1},address {2}".format(self.name, self.age, self.address)
+        return "name={0},age={1},address={2}".format(self.name, self.age, self.address)
 
 
 class Employee(Person):
@@ -17,7 +15,7 @@ class Employee(Person):
         self.salary = salary
 
     def __str__(self):
-        return "{2} post{0},salary{1}".format(self.post, self.salary, Person.__str__(self))
+        return "{2}post={0},salary={1}".format(self.post, self.salary, Person.__str__(self))
 
 
 class Manager(Employee):
@@ -27,13 +25,11 @@ class Manager(Employee):
         self.department = department
 
     def __str__(self):
-        return "{2} secretary{0},departmen{1}".format(self.secretary, self.department, Employee.__str__(self))
+        return "{2} secretary {0},department {1}".format(self.secretary, self.department, Employee.__str__(self))
 
 
-x = Person("Dhoni", 38, "Varanasi")
-print(x)
-y = Employee('MS Dhoni', 40, "Ranchi", "developer", 350)
-print(y)
+t2 = Manager("rahul", 66, "bhihar", "peoin", 550, "neeraj", "cs")
+print(t2)
 
-z = Manager("Sachin", 35, "mumbai", "web developer", 500, y, "software developer")
-print(z)
+t1 = Employee("ccc", 44, "saidpur", "maneger", 34500)
+print(t1)
